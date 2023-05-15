@@ -1,0 +1,254 @@
+/*-------------------------------------- Default Styling ------------------------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --clr-dark: #03001C;
+    --clr-medium: #5B8FB9;
+    --clr-light: #4ec9e1;
+    --clr-hover-light: #8aebff;
+    --clr-white: #fff;
+    --clr-gray: #323232;
+    --clr-redHover: #ff4747;
+    --clr-red: #e00000;
+}
+
+html {
+    font-weight: 500;
+}
+
+body {
+    background-color: var(--clr-dark);
+    color: var(--clr-white);
+}
+
+
+/*-------------------------------------- Utilities ------------------------------------------ */
+.myBg-dark {
+    background-color: var(--clr-dark);
+}
+
+.myBg-Light {
+    background-color: var(--clr-medium);
+}
+
+.myBg-love {
+    background-color: var(--clr-light);
+}
+
+.myBg-gray {
+    background-color: var(--clr-gray);
+}
+
+.myText-dark {
+    color: var(--clr-dark);
+}
+
+.myText-light {
+    color: var(--clr-medium);
+}
+
+.myText-love {
+    color: var(--clr-light);
+}
+
+.myText-gray {
+    color: var(--clr-gray);
+}
+
+.myBtn-lg-light {
+    background-color: var(--clr-white);
+    color: var(--clr-light);
+    padding: 0.4rem 0.6rem;
+    border: 2px solid var(--clr-light);
+    border-radius: 5px;
+    /* font-weight: bold;   */
+    display: inline-block;
+    width: 100%;
+}
+
+
+.myBtn-light {
+    background-color: var(--clr-white);
+    color: var(--clr-light);
+    padding: 0.4rem 0.6rem;
+    border: 2px solid var(--clr-light);
+    border-radius: 5px;
+    /* font-weight: bold;   */
+    display: inline-block;
+    text-decoration: none;
+}
+
+.myBtn {
+    background-color: var(--clr-light);
+    color: var(--clr-white);
+    padding: 0.4rem 0.6rem;
+    /* border: 2px solid var(--clr-light); */
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.myBtn:hover {
+    background-color: var(--clr-hover-light);
+    color: var(--clr-white);
+}
+
+
+.myBtn-lg-light:hover,
+.myBtn-light:hover {
+    background-color: var(--clr-hover-light);
+    color: var(--clr-white);
+}
+
+.myBtn-lg {
+    background-color: var(--clr-light);
+    color: var(--clr-white);
+    padding: 0.4rem 0.6rem;
+    border: none;
+    border-radius: 5px;
+    /* font-weight: bold; */
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+}
+
+.myBtn-lg:hover {
+    background-color: var(--clr-hover-light);
+    border: 2px solid var(--clr-light);
+}
+
+.custom-gradient1 {
+    background: rgb(53, 78, 149);
+    background: linear-gradient(90deg, rgba(53, 78, 149, 1) 14%, rgba(72, 181, 202, 1) 89%, (96, 179, 196, 1) 100%);
+}
+
+.custom-gradient2 {
+    background: rgb(90, 166, 186);
+    background: linear-gradient(90deg, rgba(90, 166, 186, 1) 3%, rgba(68, 169, 167, 1) 5%, rgba(53, 78, 149, 1) 100%);
+}
+
+.customHover:hover {
+    color: var(--clr-hover-light);
+}
+
+.customLinearGradient {
+    background: rgb(3, 0, 28);
+    background: linear-gradient(0deg, rgba(3, 0, 28, 1) 0%, rgba(3, 0, 28, 1) 56%, rgba(60, 59, 63, 0.979224966353729) 100%);
+}
+
+.myBtn-red {
+    background-color: var(--clr-red);
+    color: var(--clr-white);
+    padding: 0.4rem 0.6rem;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.myBtn-red:hover {
+    background-color: var(--clr-redHover);
+    color: var(--clr-white);
+}
+
+
+/* ---------------------------- Welcome Page ------------------------ */
+
+.welcomeText:hover {
+    color: var(--clr-hover-light);
+}
+
+.welcomeMain {
+    height: 700px;
+}
+
+.welcomeDiv {
+    width: 18%;
+}
+
+
+.welcomeBtnAct {
+    background-color: var(--clr-white);
+    color: var(--clr-light);
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    width: 100%;
+    border: none;
+    display: inline-block;
+}
+
+.active {
+    background-color: var(--clr-light);
+    color: var(--clr-white);
+    border: 1px solid var(--clr-white);
+    /* font-weight: bold; */
+}
+
+
+
+/* ---------------------------- Login/SignUp Page ------------------------ */
+
+.loginMain {
+    height: 700px;
+    color: var(--clr-white);
+}
+
+.formDiv {
+    width: 25%;
+    border: 2px solid var(--clr-white);
+}
+
+
+
+/* ---------------------------- Side Navbar ------------------------ */
+
+.myNav-link {
+    color: var(--clr-white);
+    text-decoration: none;
+    border: none;
+    background-color: var(--clr-medium);
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+.myNav-link:hover {
+    color: var(--clr-hover-light);
+}
+
+/* ---------------------------- Playlists ------------------------ */
+
+.linkStyling {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.linkStyling:hover {
+    color: var(--clr-hover-light);
+}
+
+.blackA {
+    color: #000;
+}
+
+.blackA:hover {
+    color: var(--clr-hover-light);
+}
+
+/* ---------------------------- Home ------------------------ */
+
+
+#p-3 row text-white-50 shadow myBg-gray rounded my-3{
+	color: red;
+	
+}
